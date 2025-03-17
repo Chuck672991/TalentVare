@@ -1,8 +1,6 @@
-/* @tailwind base;
-@tailwind components; */
-@tailwind utilities;
 
 @import "tailwindcss";
+
 @font-face {
   font-family: 'NeueBlack';
   src: url('/fonts/NeueHaasDisplayBlack.ttf') format('truetype');
@@ -20,11 +18,70 @@
 @font-face {
   font-family: 'NeueLight';
   src: url('/fonts/NeueHaasDisplayLight.ttf') format('truetype');
-  font-weight: 5 00;
+  font-weight: 500;
  
 }
 @font-face {
   font-family: 'NeueThin';
   src: url('/fonts/NeueHaasDisplayThin.ttf') format('truetype');
   font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NeueXXThin';
+  src: url('/fonts/NeueHaasDisplayXXThin.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@theme {
+  /* Colors */
+  --color-primary: #0154AA; /* Blue */
+  --color-secondary: #333333; /* Black */
+  --color-textGray: #585D6E; /* Gray */
+  --color-searchBg: #F6F9FF;
+  /* Font Families */
+  --font-neueBlack: "NeueBlack", sans-serif;
+  --font-neueBold: "NeueBold", sans-serif;
+  --font-neueLight: "NeueLight", sans-serif;
+  --font-neueThin: "NeueThin", sans-serif;
+  --font-neueXXThin: "NeueXXThin", sans-serif;
+
+  /* Spacing */
+  --spacing-72: 18rem;
+  --spacing-84: 21rem;
+  --spacing-96: 24rem;
+
+  /* Font Sizes */
+  --font-h1: 2.5rem; /* 22px */
+  --font-h2: 2rem; /* 14px */
+  --font-h3: 1.75rem;
+  --font-p: 2rem; /* 14px */
+  --font-body: 1rem;
+  --font-small: 0.875rem;
+  --font-li:1rem;
+  /* Line Heights */
+  --line-h1: 3rem;
+  --line-h2: 2.5rem;
+  --line-h3: 2rem;
+  --line-body: 1.5rem;
+  --line-small: 1.25rem;
+
+/* Text Size */
+--text-h1: 2.5rem; /* 22px */
+--text-h2: 2rem; /* 14px */
+--text-h3: 1.75rem;
+--text-p: 2rem; /* 14px */
+--text-body: 1rem;
+--text-small: 0.875rem;
+--text-li:1.2rem;
+  /* Font Weights */
+  --weight-h1: 700;
+  --weight-h2: 600;
+  --weight-h3: 500;
+  --weight-body: 400;
+  --weight-small: 400;
+
+  /* Letter Spacing */
+  --letter-h1: -0.02em;
+  --letter-h2: -0.01em;
 }
