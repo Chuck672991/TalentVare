@@ -1,0 +1,30 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
+@import "tailwindcss";
+@font-face {
+  font-family: 'NeueBlack';
+  src: url('/fonts/NeueHaasDisplayBlack.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueBold';
+  src: url('/fonts/NeueHaasDisplayBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueLight';
+  src: url('/fonts/NeueHaasDisplayLight.ttf') format('truetype');
+  font-weight: 5 00;
+ 
+}
+@font-face {
+  font-family: 'NeueThin';
+  src: url('/fonts/NeueHaasDisplayThin.ttf') format('truetype');
+  font-weight: 500;
+}
