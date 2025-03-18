@@ -3,7 +3,7 @@ import JobCard from './JobCard'
 
 const JobSection = ({ jobData }) => {
     return (
-        <div className="mt-8">
+        <div className="mt-4">
             <div className="flex space-x-4 items-end">
                 <h2 className="text-xl   sm:text-2xl font-semibold">
                     {/* Featured Jobs */}

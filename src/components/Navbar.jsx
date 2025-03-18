@@ -10,7 +10,7 @@ const Navbar = () => (
             <div className="flex items-center gap-4 md:gap-8">
                 <Logo />
 
-                <ul className="hidden md:flex space-x-6 lg:space-x-8">
+                <ul className="hidden md:flex space-x-6 lg:space-x-6">
                     <li className="font-neueBold text-li">
                         <a className="font-extrabold text-nowrap text-primary hover:text-primary-dark" href="/top-companies">
                             Find Jobs
@@ -27,7 +27,7 @@ const Navbar = () => (
             </div>
         </div>
 
-        <div className="flex items-center space-x-4 md:space-x-6 lg:space-x-8">
+        <div className="flex items-center space-x-4 md:space-x-4 lg:space-x-6">
             <div className="hidden md:block">
                 <SearchInput />
             </div>
@@ -37,7 +37,7 @@ const Navbar = () => (
             <img
                 src={userPng}
                 loading="lazy"
-                className="w-10 h-10 rounded-full border-2 border-gray-200"
+                className="w-11 h-11 rounded-full border-2 border-gray-200"
                 alt="User"
             />
         </div>
