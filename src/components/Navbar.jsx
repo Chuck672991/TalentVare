@@ -14,11 +14,11 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex items-center justify-between w-full h-16 bg-white px-4 sm:px-6 md:px-8 lg:px-12">
+        <nav className="flex items-center justify-between   w-full h-16 bg-white px-4 sm:px-6 md:px-8 lg:px-12">
             <div className="flex items-center space-x-4 md:space-x-10">
                 <Logo />
 
-                <ul className="hidden  md:flex space-x-6  lg:space-x-3  2xl:space-x-6">
+                <ul className="hidden clg:flex xl:flex space-x-6  lg:space-x-3  2xl:space-x-6">
                     <li className="font-neueBold text-li">
                         <a
                             className="font-extrabold text-nowrap text-primary hover:text-primary-dark"

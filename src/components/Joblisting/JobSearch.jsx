@@ -19,7 +19,7 @@ const JobSearch = () => (
       <option>Job Type</option>
     </select>
 
-    <Button className="w-full sm:w-auto px-6 py-2 flex items-center justify-center bg-primary hover:bg-primary-dark text-white">
+    <Button className="w-full sm:w-auto px-8 py-2 flex items-center justify-center bg-primary hover:bg-primary-dark text-white">
       <Search className="mr-2" /> Search
     </Button>
   </div>

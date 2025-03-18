@@ -77,6 +77,7 @@
   --breakpoint-mmd: 60rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
+  --breakpoint-clg: 1170px;
 
   /* Text Size */
   --text-h1: 1.7rem;
