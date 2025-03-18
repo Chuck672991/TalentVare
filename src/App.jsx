@@ -7,15 +7,19 @@ import JobListing from './components/Joblisting/JobListing'
 function App() {
 
   return (
-    <div className='w-full h-screen bg-background'>
-     <Navbar/>
-     <div className=' px-10 flex justify-around py-5'>
-
-      <ProfileCard user={user} stats={stats} calendar={calendar}/>
-      <JobListing jobData={jobData}  />;
-      {/* Section */}
-     </div>
-     </div>
+    <div className="w-full min-h-screen bg-background">
+    <Navbar />
+    <div className="px-4 sm:px-6 lg:px-10 py-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 ">
+        <div className="lg:col-span-1">
+          <ProfileCard user={user} stats={stats} calendar={calendar} />
+        </div>
+        <div className="lg:col-span-3">
+          <JobListing jobData={jobData} />
+        </div>
+      </div>
+    </div>
+  </div>
   )
 }
 

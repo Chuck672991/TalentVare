@@ -38,6 +38,11 @@
   src: url('/fonts/NeueHaasDisplayRoman.ttf') format('truetype');
   font-weight: 500;
 }
+@font-face {
+  font-family: 'NeueMedium';
+  src: url('/fonts/NeueHaasDisplayMediu.ttf') format('truetype');
+  font-weight: 100;
+}
 
 @theme {
   /* Colors */
@@ -54,11 +59,16 @@
   /* Font Families */
   --font-neueBlack: "NeueBlack", sans-serif;
   --font-neueBold: "NeueBold", sans-serif;
+  /*  Not Used */
+
   --font-neueLight: "NeueLight", sans-serif;
   --font-neueThin: "NeueThin", sans-serif;
+  /*  Not Used */
   --font-neueXXThin: "NeueXXThin", sans-serif;
   --font-neueRoman: "NeueRoman", sans-serif;
-
+  /* Not Used */
+  --font-neueMedium: "NeueMedium", sans-serif; 
+  
   /* Spacing */
   --spacing-72: 18rem;
   --spacing-84: 21rem;
@@ -82,7 +92,7 @@
   /* 14px */
   --text-body: 1rem;
   --text-small: 1.1rem;
-  --text-li: 1.2rem;
+  --text-li: 1.15rem;
   /* Font Weights */
   --font-weight-heading: 600;
   --font-weight-extraBlack: 800;

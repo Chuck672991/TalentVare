@@ -17,9 +17,9 @@ const ProfileHeader = ({ backgroundImage, profileImage, name, title, location })
       />
     </div>
     <div className="text-center flex flex-col items-center mt-12 px-4 pb-1">
-      <h2 className="text-li font-neueBold text-black">{name}</h2>
-      <p className="text-sm  font-bold w-[236px] text-center font-neueLight text-gray-600 ">{title}</p>
-      <p className="text-xs font-neueLight text-gray-500">{location}</p>
+      <h2 className="text-li font-neueBold text-secondary">{name}</h2>
+      <p className="text-sm  font-bold w-[236px] text-center font-neueLight text-textGray ">{title}</p>
+      <p className="text-xs font-neueLight text-secondary">{location}</p>
     </div>
   </div>
 );

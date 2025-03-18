@@ -6,14 +6,14 @@ const SearchInput = ({
     value,
     onChange, }) => {
     return (
-    <div className="flex w-full  items-center gap-5 bg-searchBg rounded-lg px-4  focus-within:ring-2 focus-within:ring-blue-500 transition">
+    <div className="flex w-full  items-center gap-5 bg-searchBg ml-5 px-4  focus-within:ring-2 focus-within:ring-primary transition">
       <MagnifyingGlass  />
       <input
         type="text"
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className=" outline-none w-full bg-searchBg text-gray-700 placeholder-gray-400"
+        className=" outline-none w-full py-2  bg-searchBg text-lightGrey placeholder-lightGrey"
       />
     </div>
     )
