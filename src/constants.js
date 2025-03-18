@@ -66,6 +66,7 @@ const jobsLisiting = [
         posted: "1 day ago",
         applicants: 22,
       },
+     
     ]
   }, {
     title: "Recommended Jobs"
@@ -106,6 +107,7 @@ const jobsLisiting = [
         posted: "1 day ago",
         applicants: 22,
       },
+     
     ]
 
   }
