@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS } from '../data';
 import Logo from './common/Logo';
 import SearchInput from './common/SearchInput';
 import Button from './common/Button';
