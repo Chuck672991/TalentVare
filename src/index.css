@@ -46,6 +46,7 @@
 
 @theme {
   /* Colors */
+  
   --color-primary: #0154AA;
   /* Blue */
   --color-secondary: #333333;
@@ -69,18 +70,12 @@
   /* Not Used */
   --font-neueMedium: "NeueMedium", sans-serif; 
   
-  /* Spacing */
-  --spacing-72: 18rem;
-  --spacing-84: 21rem;
-  --spacing-96: 24rem;
+  /* --breakpoint- */
 
 
-  /* Line Heights */
-  --line-h1: 3rem;
-  --line-h2: 2.5rem;
-  --line-h3: 2rem;
-  --line-body: 1.5rem;
-  --line-small: 1.25rem;
+  --breakpoint-xs: 30rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
 
   /* Text Size */
   --text-h1: 1.7rem;

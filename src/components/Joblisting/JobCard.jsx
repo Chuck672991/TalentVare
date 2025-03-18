@@ -16,12 +16,12 @@ const JobCard = ({ job }) => (
       </div>
     </div>
 
-    <div className="flex items-center text-sm text-textGray mt-4">
+    <div className="flex items-center text-sm text-textGray mt-2">
       <MapPin  className="w-4 h-4 mr-2" />
       {job.location}
     </div>
 
-    <div className="flex items-center text-sm text-textGray mt-2">
+    <div className="flex items-center text-sm text-textGray mt-1">
     <Clock4  className="w-4 h-4 mr-2 " />
       {job.posted} | <span className="text-primary font-semibold ml-1">{job.applicants} applicants</span>
     </div>
@@ -29,7 +29,7 @@ const JobCard = ({ job }) => (
     <div className="flex justify-between items-center mt-4">
       <Button className="w-full py-2 ">Apply Now</Button>
       <Bookmark
-        size={28}
+        size={30}
         color="#737A91"
         className="ml-4 cursor-pointer hover:text-primary transition-colors duration-300"
       />
