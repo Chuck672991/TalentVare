@@ -1,9 +1,9 @@
 
 import './App.css'
-import { Navbar } from './components/Navbar'
+import Navbar  from './components/Navbar'
 import ProfileCard from './components/ProfileCard/ProfileCard'
-import { calendar, jobData, stats, user } from './constants'
-import JobListing from './components/Joblisting/JobListing'
+import { calendar, jobsLisiting, similarJobs, stats, user } from './constants'
+import JobListing from './components/Joblisting/JobListingMain'
 function App() {
 
   return (
@@ -15,7 +15,7 @@ function App() {
           <ProfileCard user={user} stats={stats} calendar={calendar} />
         </div>
         <div className="lg:col-span-3">
-          <JobListing jobData={jobData} />
+          <JobListing jobData={jobsLisiting} similarJobs={similarJobs} />
         </div>
       </div>
     </div>
