@@ -1,15 +1,25 @@
-import { useState } from 'react'
 
 import './App.css'
-import Button from './components/common/Button'
 import { Navbar } from './components/Navbar'
+import ProfileCard from './components/ProfileCard/ProfileCard'
+import { calendar, jobData, stats, user } from './constants'
+import JobListing from './components/Joblisting/JobListing'
 function App() {
 
   return (
-    <>
-     <Navbar/>
-    
-     </>
+    <div className="w-full min-h-screen bg-background">
+    <Navbar />
+    <div className="px-4 sm:px-6 lg:px-10 py-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 ">
+        <div className="lg:col-span-1">
+          <ProfileCard user={user} stats={stats} calendar={calendar} />
+        </div>
+        <div className="lg:col-span-3">
+          <JobListing jobData={jobData} />
+        </div>
+      </div>
+    </div>
+  </div>
   )
 }
 
