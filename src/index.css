@@ -74,6 +74,7 @@
 
 
   --breakpoint-xs: 30rem;
+  --breakpoint-mmd: 60rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
 
@@ -101,3 +102,4 @@
   --letter-h1: -0.02em;
   --letter-h2: -0.01em;
 }
+/* 768 - 1400 */

@@ -1,12 +1,11 @@
 import React from "react";
 import JobSearch from "./JobSearch";
-import JobCard from "./JobCard";
 import SimilarJobs from "./SimilarJobs";
 import JobSection from "./JobSection";
 
 const JobListing = ({ jobData,similarJobs }) => (
-    <div className="text-secondary min-h-screen px-4 sm:px-6 lg:px-8 py-2">
-        <div className="text-center sm:text-left">
+    <div className="text-secondary min-h-screen px-4 sm:px-6 lg:px-8 py-2 ">
+        <div className="md:mt-0 xs:my-10 text-center sm:text-left">
             <h1 className="!text-h1 sm:text-4xl  font-neueMedium text-secondary font-li">
                 Find your Dream Job,
                 <span className="text-primary ">{" "} Albert!</span>
@@ -23,7 +22,7 @@ const JobListing = ({ jobData,similarJobs }) => (
         <div className="mt-6">
             <SimilarJobs similarJobs={similarJobs} />
         </div>
-     {jobData.map(job=><JobSection jobData={job} />)}   
+     {jobData.map((job,index)=><JobSection key={index} jobData={job} />)}   
     </div>
 );
 
