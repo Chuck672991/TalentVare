@@ -5,7 +5,7 @@ import JobSection from "./JobSection";
 
 const JobListing = ({ jobData,similarJobs }) => (
     <div className="text-secondary min-h-screen px-4 sm:px-6 lg:px-8 py-2 ">
-        <div className="md:mt-0 xs:my-10 text-center sm:text-left">
+        <div className="lg:mt-0 md:mt-5 md:my-2 xs:my-10 text-center sm:text-left">
             <h1 className="!text-h1 sm:text-4xl  font-neueMedium text-secondary font-li">
                 Find your Dream Job,
                 <span className="text-primary ">{" "} Albert!</span>

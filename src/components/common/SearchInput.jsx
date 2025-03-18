@@ -6,7 +6,7 @@ const SearchInput = ({
     value,
     onChange, }) => {
     return (
-    <div className="flex w-full  items-center gap-5 bg-searchBg ml-5 px-4  focus-within:ring-2 focus-within:ring-primary transition">
+    <div className="flex w-full  items-center gap-2 bg-searchBg ml-4 px-4  focus-within:ring-2 focus-within:ring-primary transition">
       <MagnifyingGlass  />
       <input
         type="text"
