@@ -29,11 +29,11 @@ const SearchIcon = ({ className }) => (
 );
 
 const JobSearch = () => (
-  <div className="bg-white font-semibold  text-textGray !text-sm font-neueRoman rounded-md p-4 mt-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+  <div className="bg-white  font-medium  text-gray-600 !text-sm font-neueRoman rounded-md p-4 mt-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
     <input
       type="text"
       placeholder="Job Title, Company, or Keywords"
-      className="w-full sm:w-auto flex-1 p-2 px-3  border-0  border-gray-300  focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+      className="w-full sm:w-auto flex-1 p-2 px-3  border-0  border-gray-300  focus:outline-none focus:border-primary focus:ring-0 focus:ring-primary"
     />
 
     <select className="w-full sm:w-auto p-2 px-5  border-0 border-l border-gray-300  focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary cursor-pointer">

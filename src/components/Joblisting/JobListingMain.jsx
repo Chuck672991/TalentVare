@@ -5,7 +5,7 @@ import JobSection from "./JobSection";
 
 const JobListing = ({ jobData,similarJobs }) => (
     <div className="text-secondary min-h-screen px-4 sm:px-6 lg:px-8 py-2 ">
-        <div className="lg:mt-0 md:mt-5 md:my-2 xs:my-10 text-center sm:text-left">
+        <div className="lg:mt-0 md:mt-5 vsm:my-6  md:my-2 xs:my-10 text-center sm:text-left">
             <h1 className="!text-h1 sm:text-4xl  font-neueMedium text-secondary font-li">
                 Find your Dream Job,
                 <span className="text-primary ">{" "} Albert!</span>
@@ -16,10 +16,10 @@ const JobListing = ({ jobData,similarJobs }) => (
             </p>
         </div>
       
-        <div className="mt-3">
+        <div className="mt-3 vsm:mb-6  ">
             <JobSearch />
         </div>
-        <div className="mt-6">
+        <div className="mt-6 vsm:my-6">
             <SimilarJobs similarJobs={similarJobs} />
         </div>
      {jobData.map((job,index)=><JobSection key={index} jobData={job} />)}   
