@@ -62,37 +62,37 @@ const Navbar = () => {
               
             </div>
 
-            {isMobileMenuOpen && (
-                <div className=" clg:hidden !text-sm transition-all absolute top-16 left-0 w-full bg-white shadow-lg z-50">
-                    <div className="md:hidden  pr-5 space-x-10 xs:flex justify-between sm:flex">
-                        <SearchInput />
-                        <Button className="md:hidden ml-3 my-0  sm:block">Resume Builder</Button>
+         {isMobileMenuOpen && (
+  <div className="clg:hidden !text-sm transition-all absolute top-16 left-0 w-full bg-white shadow-lg z-50 p-4">
+    <div className="md:hidden w-full  flex items-center gap-10 xs:flex sm:flex">
+      <div className="-ml-4 w-full"> 
+        <SearchInput />
+      </div>
+      <Button className="md:hidden  sm:block px-2 py-2">Resume Builder</Button>
+    </div>
+    <ul className="flex flex-col space-y-3 mt-4">
+      <li className="font-neueBold text-li">
+        <a
+          className="font-extrabold text-sm sm:text-base text-nowrap text-primary hover:text-primary-dark"
+          href="/top-companies"
+        >
+          Find Jobs
+        </a>
+      </li>
+      {NAV_LINKS.map((link) => (
+        <li
+          className="font-neueRoman md:text-li text-sm sm:text-base text-nowrap font-medium text-lightGrey"
+          key={link.name}
+        >
+          <a href={link.path} className="hover:text-primary">
+            {link.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}
 
-                    </div>
-                    <ul className="flex  flex-col space-y-4 p-4">
-                        <li className="font-neueBold text-li">
-                            <a
-                                className="font-extrabold !text-sm text-nowrap text-primary hover:text-primary-dark"
-                                href="/top-companies"
-                            >
-                                Find Jobs
-                            </a>
-                        </li>
-                        {NAV_LINKS.map((link) => (
-                            <li
-                                className="font-neueRoman !text-sm text-nowrap font-medium text-lightGrey text-li"
-                                key={link.name}
-                            >
-                                <a href={link.path} className="hover:text-primary">
-                                    {link.name}
-                                </a>
-                            </li>
-                        ))}
-
-
-                    </ul>
-                </div>
-            )}
         </nav>
     );
 };
