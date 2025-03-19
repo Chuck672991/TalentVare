@@ -45,17 +45,11 @@
   --color-lightGrey: #737A91;
 
   /* Font Families */
-  /* --font-neueBlack: "NeueBlack", sans-serif; */
   --font-neueBold: "NeueBold", sans-serif;
-  /*  Not Used */
 
   --font-neueLight: "NeueLight", sans-serif;
 
-  /* --font-neueThin: "NeueThin", sans-serif; */
-  /*  Not Used */
-  /* --font-neueXXThin: "NeueXXThin", sans-serif; */
   --font-neueRoman: "NeueRoman", sans-serif;
-  /* Not Used */
   --font-neueMedium: "NeueMedium", sans-serif; 
   
   /* --breakpoint- */
