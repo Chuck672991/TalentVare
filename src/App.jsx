@@ -2,7 +2,7 @@
 import './App.css'
 import Navbar  from './components/Navbar'
 import ProfileCard from './components/ProfileCard/ProfileCard'
-import { calendar, jobsLisiting, similarJobs, stats, user } from './constants'
+import { calendar, jobsLisiting, similarJobs, stats, user } from './data'
 import JobListing from './components/Joblisting/JobListingMain'
 function App() {
 

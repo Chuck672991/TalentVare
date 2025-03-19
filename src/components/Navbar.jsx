@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS } from '../data';
 import Logo from './common/Logo';
 import SearchInput from './common/SearchInput';
 import Button from './common/Button';
@@ -29,10 +29,10 @@ const Navbar = () => {
                     </li>
                     {NAV_LINKS.map((link) => (
                         <li
-                            className="font-neueRoman text-nowrap  font-medium text-lightGrey   lg:text-li"
+                            className="font-neueRoman  text-nowrap  font-medium text-lightGrey   lg:text-li"
                             key={link.name}
                         >
-                            <a href={link.path} className="hover:text-primary">
+                            <a href={link.path} className="hover:text-primary ">
                                 {link.name}
                             </a>
                         </li>
@@ -45,29 +45,34 @@ const Navbar = () => {
                     <SearchInput />
                 </div>
 
-                <Button className="hidden sm:block">Resume Builder</Button>
-
-                <img
-                    src={userPng}
-                    loading="lazy"
-                    className="w-10 h-10 rounded-full border-2 border-gray-200"
-                    alt="User"
-                />
-
+                <Button className="hidden md:block">Resume Builder</Button>
                 <button
-                    className="md:hidden p-2 text-gray-600 hover:text-primary focus:outline-none"
+                    className="clg:hidden py-2 text-gray-600 hover:text-primary focus:outline-none"
                     onClick={toggleMobileMenu}
                 >
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                </button>   
+                <img
+                    src={userPng}
+                    loading="lazy"
+                    className="w-10 h-10  rounded-full border-2 border-gray-200"
+                    alt="User"
+                />
+
+              
             </div>
 
             {isMobileMenuOpen && (
-                <div className="md:hidden transition-all absolute top-16 left-0 w-full bg-white shadow-lg z-50">
-                    <ul className="flex flex-col space-y-4 p-4">
+                <div className=" clg:hidden !text-sm transition-all absolute top-16 left-0 w-full bg-white shadow-lg z-50">
+                    <div className="md:hidden  pr-5 space-x-10 xs:flex justify-between sm:flex">
+                        <SearchInput />
+                        <Button className="md:hidden ml-3 my-0  sm:block">Resume Builder</Button>
+
+                    </div>
+                    <ul className="flex  flex-col space-y-4 p-4">
                         <li className="font-neueBold text-li">
                             <a
-                                className="font-extrabold text-nowrap text-primary hover:text-primary-dark"
+                                className="font-extrabold !text-sm text-nowrap text-primary hover:text-primary-dark"
                                 href="/top-companies"
                             >
                                 Find Jobs
@@ -75,7 +80,7 @@ const Navbar = () => {
                         </li>
                         {NAV_LINKS.map((link) => (
                             <li
-                                className="font-neueRoman text-nowrap font-medium text-lightGrey text-li"
+                                className="font-neueRoman !text-sm text-nowrap font-medium text-lightGrey text-li"
                                 key={link.name}
                             >
                                 <a href={link.path} className="hover:text-primary">
@@ -83,6 +88,8 @@ const Navbar = () => {
                                 </a>
                             </li>
                         ))}
+
+
                     </ul>
                 </div>
             )}
