@@ -1,5 +1,4 @@
 import React from "react";
-// import { Search } from "lucide-react";
 import Button from "../common/Button";
 
 const SearchIcon = ({ className }) => (
@@ -45,7 +44,6 @@ const JobSearch = () => (
     </select>
 
     <Button className="w-full sm:w-auto  sm:px-1 md:px-4 lg:px-8 py-2 flex items-center justify-center bg-primary hover:bg-primary-dark text-white">
-      {/* <Search className="mr-0 xs:mr-10 md:mr-2" /> */}
       <SearchIcon className="mr-0  md:mr-2" />
       <span className="md:hidden sm:hidden xs:block xs:ml-2 md:ml-0 lg:block"> Search </span>
     </Button>
